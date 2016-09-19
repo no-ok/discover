@@ -1,0 +1,282 @@
+.our-projects {
+}
+
+.our-projects-title-group {
+  background: #f3f3f3;
+  min-height: 430px;
+  padding: 70px 0 0;
+  background: #f3f3f3 url("@{rootUrl}section-bg.svg") no-repeat center left;
+
+  .main-container {
+    position:relative;
+  }
+
+  .h2 {
+    position: relative;
+    z-index: 10;
+  }
+
+  .top-title {
+    margin-top: 168px;
+  }
+
+  .section-num {
+    position: absolute;
+    top: -78px;
+    right: -185px;
+    color: #e8e8e8;
+    font-size: 374px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+}
+
+.our-projects-content {
+  margin: auto;
+  max-width: 1405px;
+  position:relative;
+  padding: 40px 0 10px 0;
+
+  &:before {
+    content: "";
+    width: 1px;
+    height: 180px;
+    background: #d1d2d6;
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+  }
+
+  &:after {
+    content: "";
+    width: 670px;
+    height: 1px;
+    background: #d1d2d6;
+    position: absolute;
+    left: 0;
+    bottom: 31px;
+  }
+
+  .main-container {
+    position:relative;
+    padding-right: 332px;
+  }
+
+  .btn-wrap {
+    text-align: right;
+    padding-right: 15px;
+
+    .purple-btn {
+      border: 1px solid #8f51cc;
+      color: #8f51cc;
+      display: inline-block;
+      vertical-align: top;
+
+      .btn-line {
+        background: #8f51cc;
+      }
+
+      &.hvr-bounce-to-right:before {background: #8f51cc;}
+
+      &.hvr-bounce-to-right:hover,
+      &.hvr-bounce-to-right:focus,
+      &.hvr-bounce-to-right:active {color: #fff;}
+    }
+  }
+}
+
+.project-col {
+  margin-bottom: 67px;
+}
+
+.project-descr {
+  color: #242424;
+  margin: 0 0 47px;
+  font-size: 20px;
+}
+
+.projects-text {
+  line-height: 2.1;
+  font-size: 15px;
+  margin: 0;
+  padding-right: 40px;
+}
+
+@media(max-width: 1536px) {
+  .our-projects-title-group {
+    .section-num {
+      top: -19px;
+      right: -12px;
+    }
+  }
+
+  .our-projects-content {
+    &:after {display: none;}
+
+    .main-container {
+      padding-right: 500px;
+    }
+  }
+}
+
+@media(max-width: 1280px) {
+
+  .our-projects-title-group {
+    padding: 40px 15px 0;
+    .section-num {
+      top: 150px;
+      right: -12px;
+    }
+  }
+
+
+  .our-projects-content {
+
+    &:before {
+      bottom: auto;
+      top: 10%;
+    }
+
+    .main-container {
+      padding-right: 0;
+
+      .project-descr {padding-left: 20px;}
+
+      .project-col {
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+@media(max-width:1080px) {
+ .our-projects-content {
+
+  .btn-wrap {
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+ }
+}
+
+@media(max-width: 992px) {
+  .our-projects-title-group {
+    min-height: 350px;
+
+    .h2 {font-size: 40px;}
+
+    .top-title {
+      margin-top: 60px;
+      margin-left: 60px;
+    }
+
+    .bottom-title {margin-left: 60px;}
+
+    .section-num {
+      font-size: 250px;
+      top: 150px;
+      right: 150px;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+
+  .our-projects-title-group {
+    min-height: 300px;
+
+    .h2 {font-size: 30px;}
+
+    .top-title {
+      font-size: 50px;
+    }
+
+    .bottom-title {
+      font-size: 30px
+    }
+
+    .section-num {
+      font-size: 250px;
+      top: 125px;
+      right: 91px;
+    }
+  }
+
+  .our-projects-content {
+
+    .project-col {
+      margin-bottom: 20px;
+
+      .pure-u-1-2 {
+        .projects-text {line-height: 1.5;}
+      }
+    }
+  }
+}
+
+@media(max-width: 640px) {
+
+  .our-projects-title-group {
+
+    .h2 {font-size: 25px;}
+
+    .top-title {font-size: 30px;}
+
+    .bottom-title {font-size: 18px;}
+
+    .section-num {
+      font-size: 180px;
+      top: 151px;
+      right: 20px;
+    }
+  }
+
+  .our-projects-content {
+
+    .project-descr {
+      margin: 0 0 15px;
+    }
+
+    .project-col {
+      margin-bottom: 20px;
+      .pure-u-1-2 {
+        width: 100%;
+        .projects-text {margin-bottom: 20px;}
+      }
+    }
+  }
+}
+
+@media(max-width: 540px) {
+
+  .our-projects-content {
+
+    .project-descr {
+      text-align: center;
+      padding: 0;
+    }
+
+    .project-col {
+
+      .pure-u-1-2 {
+        .projects-text {line-height: 1.5;}
+      }
+    }
+  }
+}
+
+@media(max-width: 480px) {
+    .our-projects-title-group {
+
+    .section-num {
+      font-size: 120px;
+      top: 151px;
+      right: 20px;
+    }
+  }
+}
+
+
+
+

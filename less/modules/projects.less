@@ -1,0 +1,186 @@
+.projects {
+  padding: 45px 0;
+
+  .content-wrap {
+    padding: 0 45px;
+  }
+}
+
+.projects-list {
+  padding: 0;
+  margin: 0 -5px;
+  list-style: none;
+
+  li {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+    margin-bottom: 65px;
+  }
+}
+
+.projects-list-inner {
+
+  .img-block {
+    position: relative;
+    margin-bottom: 25px;
+
+    img {
+      display: block;
+      width: 100%;
+      border: 6px solid #e3e3e3;
+    }
+  }
+}
+
+.project-name {
+  color: #283662;
+  font-weight: 500;
+  font-family: @roboto;
+  margin: 0;
+  font-size: 20px;
+}
+
+.popup {
+  display: none;
+  max-width: 1200px;
+  padding: 0;
+  border: 4px solid rgba(125,129,133, 0.8);
+
+  .project-descr {
+    margin: 0 0 0 660px;
+    padding: 44px 25px 40px 50px;
+  }
+
+  .project-title {
+    font-size: 30px;
+    font-family: @roboto;
+    font-weight: 300;
+    color: #000;
+    margin: 0 0 45px;
+
+    span {font-weight: 700; }
+  }
+
+  .project-text {
+    color: #252525;
+    line-height: 1.9;
+    font-size: 16px;
+    margin: 0 0 20px;
+  }
+}
+
+.popup-wrap {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.fancybox-inner { height: 548px!important }
+
+@media(max-width: 1280px) {
+  .projects {
+
+    .content-wrap {
+      padding: 0 25px;
+    }
+  }
+
+  .popup {
+
+    .project-descr {
+      margin: 0 0 0 660px;
+      padding: 20px 25px 40px 20px;
+    }
+
+    .project-title {
+      font-size: 24px;
+      margin: 0 0 20px;
+    }
+
+    .project-text {
+      line-height: 1.5;
+      font-size: 14px;
+      margin: 0 0 15px;
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .popup {
+
+    .project-descr {
+      margin: 0;
+      width: 100%;
+      padding: 44px 25px 30px 50px;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .projects {
+
+    .projects-list {
+
+      li {
+        width: 50%;
+      }
+    }
+  }
+
+}
+
+@media(max-width: 768px) {
+  .projects {
+    padding: 20px 0;
+
+    .projects-list {
+
+      li {
+        width: 100%;
+        margin-bottom: 40px;
+
+        .projects-list-inner {
+
+          .img-block {margin-bottom: 10px;}
+        }
+      }
+    }
+  }
+
+  .popup {
+
+    .project-descr {
+      padding: 40px 10px 20px 15px;
+    }
+
+    .project-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media(max-width: 640px) {
+  .projects {
+
+    .content-wrap {
+      padding: 0;
+    }
+
+    .projects-list {
+
+      li {
+        width: 100%;
+        margin-bottom: 40px;
+
+        .projects-list-inner {
+          .project-name {font-size: 16px;}
+        }
+      }
+    }
+  }
+}
+
+
+
+

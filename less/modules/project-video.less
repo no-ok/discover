@@ -1,0 +1,146 @@
+.projects-video {
+  padding: 135px 0 30px;
+  background: url("@{rootUrl}section-bg.svg") no-repeat left bottom;
+  background-size: 40%;
+
+  .main-container {
+    position: relative;
+  }
+
+  .top-title,
+  .bottom-title
+   {
+    display: block;
+    text-align: center;
+    line-height: 0.2;
+  }
+
+  .top-title{
+    font-size: 88px;
+    color: #f7f7f8;
+  }
+
+  .bottom-title {
+    font-size: 50px;
+    margin-bottom: 70px;
+  }
+
+  .section-num {
+    position: absolute;
+    top: -6px;
+    right: -48px;
+    color: #ededed;
+    font-size: 374px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .video-block {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid #babcc1;
+
+    .video-inner {
+      max-width: 870px;
+      margin: 0 auto;
+      position:relative;
+      padding-top:30px;
+      height:360px;
+      overflow:hidden;
+
+      iframe,
+      object,
+      embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        border: none;
+      }
+    }
+  }
+
+  .video-descr {
+    max-width: 870px;
+    margin: 30px auto;
+    font-size: 20px;
+    font-family: @condensed;
+    color: #515151;
+    line-height: 1.3;
+  }
+}
+
+
+@media(max-width: 1536px) {
+  .projects-video {
+    .top-title {
+      font-size: 55px;
+    }
+
+    .bottom-title {
+      font-size: 30px;
+    }
+
+    .section-num {
+      font-size: 250px;
+    }
+  }
+}
+
+@media(max-width: 1280px) {
+  .projects-video {
+    padding: 135px 15px 30px;
+    .top-title {
+      font-size: 55px;
+    }
+
+    .bottom-title {
+      font-size: 30px;
+    }
+
+    .section-num {
+      right: 10px;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .projects-video {
+    padding: 80px 15px 30px;
+    .top-title {
+      font-size: 35px;
+    }
+
+    .bottom-title {
+      font-size: 18px;
+      margin-bottom: 90px;
+    }
+
+    .video-descr {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media(max-width: 540px) {
+  .projects-video {
+    padding: 50px 15px 30px;
+
+    .top-title {
+      text-align: left;
+      font-size: 24px;
+    }
+
+    .bottom-title {text-align: left;}
+
+    .section-num {
+      font-size: 120px;
+      right: -5px;
+      top: 4px;
+    }
+  }
+}
